@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkdin-clone</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+<!--comment number one-->
+<!--comment number two-->
+<!--comment number three-->
+<!--comment number four-->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <!-- <a href="index.html" class="logo"><img src="images/linkedin.png" alt=""></a> -->
+            <div class="search-box">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li class="active-link"><a href=""></a><span>Home</span></li>
+                <!-- <li><a href=""><img src="images/profile-new.png" alt=""></a><span>My Network</span></li> -->
+                <li><a href=""></a><span>Explore</span></li>
+                <!-- <li><a href=""><img src="images/chatting.png" alt=""></a><span>Messaging</span></li> -->
+                <li><a href=""></a><span>Notifications</span></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+
+            <img src="images/member-2.png" alt="" onclick="toggleMenu()">
+            <div class="online">
+
+            </div>
+        </div>
+    <!-- ------------------profile dropdown menu------------------------- -->
+    <div class="profile-menu-wrap " id="profile-menu">
+        <div class="profile-menu">
+            <div class="user-info">
+                <img src="images/member-2.png" alt="">
+                <div>
+                    <h3>Renuka Khot</h3>
+                    <a href="profile.html">See your profile</a>
+                </div>
+            </div>
+
+            <hr>
+            <!-- <a href="" class="profile-menu-link">
+                <img src="images/contract.png" alt="">
+                <p>Give Feedback</p>
+                <span>></span>
+            </a> -->
+            <a href="" class="profile-menu-link">
+                <img src="images/settings.png" alt="">
+                <p>Settings and Privacy</p>
+                <span>></span>
+            </a>
+            <a href="" class="profile-menu-link">
+                <img src="images/question (1).png" alt="">
+                <p>Help & Support</p>
+                <span>></span>
+            </a>
+            <!-- <a href="" class="profile-menu-link">
+                <img src="images/moon.png" alt="">
+                <p>Display and Accesibilty</p>
+                <span>></span>
+            </a> -->
+            <a href="" class="profile-menu-link">
+                <img src="images/turn-off.png" alt="">
+                <p>Logout</p>
+                <span>></span>
+            </a>
+        </div>
+    </div>
+    </nav>
+
+
+    <!-- NAVBAR CLOSED -->
+
+     <!-- main content -->
+     <div class="hero">
+        <div class="hero-msg">
+            
+        </div>
+    </div>
+    <div class="shop">
+        <div class="box1 box">
+            <div class="content1">
+                <h2>Allu Paratha</h2>
+                <div class="box-img" style="background-image:url('bak1.jpg');"></div>
+                <a>See more</a>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="content1">
+                <h2>NanKatai biscuits</h2>
+                <div class="box-img" style="background-image:url('bak2.jpg');"></div>
+                <a>See more</a>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="content1">
+                <h2>Chiwada</h2>
+                <div class="box-img" style="background-image:url('bak3.jpg');"></div>
+                <a>See more</a>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="content1">
+                <h2>Homemade cakes</h2>
+                <div class="box-img" style="background-image:url('bak4.jpg');"></div>
+                <a>See more</a>
+            </div>
+        </div>
+        <div class="box5 box">
+            <div class="content1">
+                <h2>Rava laddu</h2>
+                <div class="box-img" style="background-image:url('bak5.jpg');"></div>
+                <a>See more</a>
+            </div>
+        </div>
+        <div class="box6 box">
+            <div class="content1">
+                <h2>Homemade Pickle</h2>
+                <div class="box-img" style="background-image:url('bak6.jpg');"></div>
+                <a>See more</a>
+            </div>
+        </div>
+        <div class="box7 box">
+            <div class="content1">
+                <h2>Papad</h2>
+                <div class="box-img" style="background-image:url('bak7.jpg');"></div>
+                <a>See more</a>
+            </div>
+        </div>
+        <div class="box8 box">
+            <div class="content1">
+                <h2>Chakali</h2>
+                <div class="box-img" style="background-image:url('bak8.jpg');"></div>
+                <a>See more</a>
+            </div>
+        </div>
+    </div>
+
+<script>
+    let profilemenu=document.getElementById("profile-menu");
+    function toggleMenu(){
+        profilemenu.classList.toggle("test")
+
+    }
+    let toggleSidebar=document.getElementById("recent-box")
+    let morelink=document.getElementById("showMoreLink")
+    function toggleSidebar1(){
+        console.log("hello")
+        toggleSidebar.classList.toggle("sidebar-activity-toggle")
+        if(toggleSidebar.classList.contains("sidebar-activity-toggle")){
+            morelink.innerHTML="Show less <b>-</b>"
+        }else{
+            morelink.innerHTML="Show more <b>+</b>"
+        }
+    }
+</script>
+</body>
+
+</html>

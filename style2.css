@@ -1,0 +1,51 @@
+.navbar{
+    height: 70px;
+    background-color: #071952;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.border{
+    height:fit-content;
+    width: fit-content;
+    border:transparent;
+    padding: 10px;
+}
+.border:hover{
+    background-color: #142e84;
+    border-radius: 3px;
+}
+.academics{
+    border-bottom: 2px solid white;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+.box{
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+}
+.box-img{
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.content1{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
